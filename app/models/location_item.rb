@@ -1,0 +1,2 @@
+class LocationItem < ApplicationRecord
+end
