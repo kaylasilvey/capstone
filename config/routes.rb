@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   namespace :api do
     # USER ROUTES -------------------------------------->
 
+    post "/sessions" => "sessions#create"
+
     post "/users" => "users#create"
-    get "/users/:id" => "users#show"
-    patch "users/:id" => "users#update"
+    # get "/users/:id" => "users#show"
+    # patch "users/:id" => "users#update"
 
     #ITEM ROUTES --------------------------------------->
 
