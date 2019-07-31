@@ -1,0 +1,6 @@
+{
+  id: item.id,
+  name: item.name,
+  UOM: item.UOM,
+  user_id: item.user_id,
+}

@@ -8,7 +8,7 @@ class Api::UsersController < ApplicationController
     )
 
     if user.save
-      render json: { message: "Welcome to SOUS! Let's get cookin'" }, status: :created
+      render json: { message: "MISE. Let's get cookin'" }, status: :created
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
