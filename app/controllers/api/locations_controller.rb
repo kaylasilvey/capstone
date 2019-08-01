@@ -2,10 +2,10 @@ class Api::LocationsController < ApplicationController
   def index
   end
 
-  def create
+  def show
   end
 
-  def show
+  def create
   end
 
   def update
