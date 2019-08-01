@@ -12,7 +12,6 @@ class Api::ListsController < ApplicationController
   def create
     @list = List.new(
       name: params[:name],
-      UOM: params[:UOM],
       user_id: current_user.id,
     )
     if @list.save
@@ -25,7 +24,6 @@ class Api::ListsController < ApplicationController
   def update
     @list = List.find_by(id: params[:id])
     @list.name = params[:name] || @list.name
-    @list.UOM = params[:UOM] || @list.name
     @list.save
     render "show.json.jb"
   end
