@@ -1,0 +1,4 @@
+{
+  id: expiration.id,
+  date: expiration.date,
+}

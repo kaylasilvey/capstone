@@ -1,0 +1,1 @@
+render partial: "expiration.json.jb", locals: { expiration: @expiration }

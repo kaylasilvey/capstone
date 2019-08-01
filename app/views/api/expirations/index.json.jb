@@ -1,0 +1,3 @@
+@expirations.map do |expiration|
+  render partial: "expiration.json.jb", locals: { expiration: expiration }
+end
