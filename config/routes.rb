@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     patch "/items/:id" => "items#update"
     delete "/items/:id" => "items#destroy"
 
-    #LOCATION ROUTES ----------------------------------->
+    #LOCATION ROUTES --------------------------------------->
 
     get "/locations" => "locations#index"
     post "/locations" => "locations#create"
@@ -28,7 +28,7 @@ Rails.application.routes.draw do
     patch "/locations/:id" => "locations#update"
     delete "/locations/:id" => "locations#destroy"
 
-    #LISTS ROUTES -------------------------------------->
+    #LISTS ROUTES --------------------------------------->
 
     get "/lists" => "lists#index"
     post "/lists" => "lists#create"
@@ -36,7 +36,7 @@ Rails.application.routes.draw do
     patch "/lists/:id" => "lists#update"
     delete "/lists/:id" => "lists#destroy"
 
-    #EXPIRATION ROUTES --------------------------------->
+    #EXPIRATION ROUTES --------------------------------------->
 
     get "/expirations" => "expirations#index"
     post "/expirations" => "expirations#create"

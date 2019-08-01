@@ -1,0 +1,5 @@
+{
+  id: location.id,
+  name: location.name,
+  user_id: location.user_id,
+}

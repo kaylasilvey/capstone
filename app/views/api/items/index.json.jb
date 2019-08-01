@@ -1,3 +1,1 @@
-@items.map do |item|
-  render partial: "items.json.jb", locals: { item: item }
-end
+render partial: "locations.json.jb", locals: { location: location }
