@@ -23,8 +23,16 @@ class Api::ItemsController < ApplicationController
   end
 
   def update
+    @item = Item.find_by(id: params[:id])
+    @item.name = params[:name] || @item.name
+    @item.UOM = params[:UOM] || @item.name
+    @item.save
+    render "show.json.jb"
   end
 
   def destroy
+    @item = Item.find_by(id: params[:id])
+    @item.destroy
+    render json: { message: "Item removed from your inventory" }
   end
 end
