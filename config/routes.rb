@@ -43,5 +43,12 @@ Rails.application.routes.draw do
     get "/expirations/:id" => "expirations#show"
     patch "/expirations/:id" => "expirations#update"
     delete "/expirations/:id" => "expirations#destroy"
+
+    #LIST_ITEMS ROUTES --------------------------------------->
+    get "/list_items" => "list_items#index"
+    post "/list_items" => "list_items#create"
+    get "/list_items/:id" => "list_items#show"
+    patch "/list_items/:id" => "list_items#update"
+    delete "/list_items/:id" => "list_items#destroy"
   end
 end

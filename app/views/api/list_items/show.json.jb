@@ -1,0 +1,1 @@
+render partial: "list_items.json.jb", locals: { list_item: @list_item }

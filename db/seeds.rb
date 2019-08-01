@@ -18,6 +18,8 @@ items = Item.create!(name: "kimchi", UOM: "jar", user_id: 1)
 items = Item.create!(name: "diet coke", UOM: "can", user_id: 2)
 items = Item.create!(name: "frozen pizza", UOM: "each", user_id: 3)
 items = Item.create!(name: "spinach", UOM: "bag", user_id: 4)
+items = Item.create!(name: "gochujang", UOM: "jar", user_id: 1)
+items = Item.create!(name: "coca cola", UOM: "bottle", user_id: 1)
 
 # LOCATION SEEDS -------------------------------------------------
 
@@ -54,3 +56,15 @@ expirations = Expiration.create!(date: "09/27/2019")
 expirations = Expiration.create!(date: "05/17/2020")
 expirations = Expiration.create!(date: "12/20/2019")
 expirations = Expiration.create!(date: "02/19/2020")
+
+# LIST_ITEM SEEDS -----------------------------------------------------
+
+list_items = ListItem.create!(list_id: 1, item_id: 2, user_id: 1, QTY: 4)
+list_items = ListItem.create!(list_id: 1, item_id: 1, user_id: 1, QTY: 1)
+list_items = ListItem.create!(list_id: 1, item_id: 3, user_id: 1, QTY: 1)
+list_items = ListItem.create!(list_id: 1, item_id: 4, user_id: 1, QTY: 1)
+list_items = ListItem.create!(list_id: 1, item_id: 5, user_id: 1, QTY: 1)
+list_items = ListItem.create!(list_id: 1, item_id: 9, user_id: 1, QTY: 1)
+list_items = ListItem.create!(list_id: 4, item_id: 7, user_id: 2, QTY: 3)
+list_items = ListItem.create!(list_id: 4, item_id: 10, user_id: 2, QTY: 1)
+list_items = ListItem.create!(list_id: 4, item_id: 6, user_id: 2, QTY: 6)
