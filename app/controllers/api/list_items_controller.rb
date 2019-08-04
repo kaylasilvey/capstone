@@ -2,6 +2,7 @@ class Api::ListItemsController < ApplicationController
   def index
     @list_items = ListItem.all
     render "index.json.jb"
+    # NEED TO EDIT SO IT ONLY SHOWS LISTS THAT BELONG TO USER
   end
 
   def show

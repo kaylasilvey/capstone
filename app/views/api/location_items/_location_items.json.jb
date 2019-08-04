@@ -1,0 +1,9 @@
+{
+  id: location_item.id,
+  location_id: location_item.location_id,
+  item_id: location_item.item_id,
+  user_id: location_item.user_id,
+  QTY: location_item.QTY,
+  item: location_item.item.name,
+  location: location_item.location.name,
+}

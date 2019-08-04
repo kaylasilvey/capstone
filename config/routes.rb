@@ -50,5 +50,12 @@ Rails.application.routes.draw do
     get "/list_items/:id" => "list_items#show"
     patch "/list_items/:id" => "list_items#update"
     delete "/list_items/:id" => "list_items#destroy"
+
+    #LOCATION_ITEMS ROUTES --------------------------------------->
+    get "/location_items" => "location_items#index"
+    post "/location_items" => "location_items#create"
+    get "/location_items/:id" => "location_items#show"
+    patch "/location_items/:id" => "location_items#update"
+    delete "/location_items/:id" => "location_items#destroy"
   end
 end
