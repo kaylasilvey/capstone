@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   # HTML
-  # get "/photos" => "photos#index"
 
   # JSON
   namespace :api do

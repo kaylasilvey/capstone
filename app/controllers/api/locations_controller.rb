@@ -1,6 +1,9 @@
 class Api::LocationsController < ApplicationController
+  before_action :authenticate_user
+
   def index
-    @locations = Location.all
+    # @locations = Location.all
+    @locations = current_user.locations
     render "index.json.jb"
   end
 

@@ -1,4 +1,6 @@
 class Api::ListsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     @lists = List.all
     render "index.json.jb"

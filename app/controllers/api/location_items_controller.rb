@@ -2,7 +2,6 @@ class Api::LocationItemsController < ApplicationController
   def index
     @location_items = LocationItem.all
     render "index.json.jb"
-    # NEED TO EDIT SO IT ONLY SHOWS LOCATIONS THAT BELONG TO USER
   end
 
   def show
