@@ -3,4 +3,10 @@
   name: item.name,
   UOM: item.UOM,
   user_id: item.user_id,
+  location: item.location_items.map { |location_item|
+    {
+      name: location_item.location.name,
+      QTY: location_item.QTY,
+    }
+  },
 }
