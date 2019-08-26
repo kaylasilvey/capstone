@@ -2,4 +2,5 @@ class Location < ApplicationRecord
   belongs_to :user
   has_many :location_items
   has_many :items, through: :location_items
+  has_many :QTY, through: :location_items
 end

@@ -2,5 +2,11 @@
   id: location.id,
   name: location.name,
   user_id: location.user_id,
-  items: location.items,
+  item: location.location_items.map { |location_item|
+    {
+      name: location_item.item.name,
+      QTY: location_item.QTY,
+      UOM: location_item.item.UOM,
+    }
+  },
 }
