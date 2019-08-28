@@ -1,8 +1,9 @@
 class Api::ListItemsController < ApplicationController
+  before_action :authenticate_user
+
   def index
-    @list_items = ListItem.all
+    @list_items = current_user.list_items
     render "index.json.jb"
-    # NEED TO EDIT SO IT ONLY SHOWS LISTS THAT BELONG TO USER
   end
 
   def show
