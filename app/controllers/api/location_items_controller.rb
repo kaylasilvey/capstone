@@ -17,7 +17,7 @@ class Api::LocationItemsController < ApplicationController
       QTY: params[:QTY],
     )
     if @location_item.save
-      render "show.json.jb"
+      render json: { message: "success" }
     else
       render json: { errors: @location_item.errors.full_messages }, status: :unprocessable_entity
     end
