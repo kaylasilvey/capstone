@@ -78,5 +78,3 @@ location_items = LocationItem.create!(location_id: 1, item_id: 9, user_id: 1, QT
 location_items = LocationItem.create!(location_id: 3, item_id: 7, user_id: 1, QTY: 3)
 location_items = LocationItem.create!(location_id: 2, item_id: 10, user_id: 1, QTY: 1)
 location_items = LocationItem.create!(location_id: 2, item_id: 6, user_id: 1, QTY: 6)
-location_items = LocationItem.create!(location_id: 2, item_id: 11, user_id: 1, QTY: 6)
-location_items = LocationItem.create!(location_id: 2, item_id: 12, user_id: 1, QTY: 1)
