@@ -1,6 +1,3 @@
-
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-
 # USER SEEDS ----------------------------------------------------
 
 users = User.create!(name: "Kayla Silvey", email: "kayla@email.com", password: "password")
@@ -68,3 +65,18 @@ list_items = ListItem.create!(list_id: 1, item_id: 9, user_id: 1, QTY: 1)
 list_items = ListItem.create!(list_id: 4, item_id: 7, user_id: 2, QTY: 3)
 list_items = ListItem.create!(list_id: 4, item_id: 10, user_id: 2, QTY: 1)
 list_items = ListItem.create!(list_id: 4, item_id: 6, user_id: 2, QTY: 6)
+
+# LOCATION_ITEM SEEDS ------------------------------------------------
+
+location_items = LocationItem.create!(location_id: 1, item_id: 2, user_id: 1, QTY: 4)
+location_items = LocationItem.create!(location_id: 2, item_id: 1, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 1, item_id: 3, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 3, item_id: 4, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 2, item_id: 5, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 1, item_id: 5, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 1, item_id: 9, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 3, item_id: 7, user_id: 1, QTY: 3)
+location_items = LocationItem.create!(location_id: 2, item_id: 10, user_id: 1, QTY: 1)
+location_items = LocationItem.create!(location_id: 2, item_id: 6, user_id: 1, QTY: 6)
+location_items = LocationItem.create!(location_id: 2, item_id: 11, user_id: 1, QTY: 6)
+location_items = LocationItem.create!(location_id: 2, item_id: 12, user_id: 1, QTY: 1)
