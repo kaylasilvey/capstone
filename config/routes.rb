@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     # patch "users/:id" => "users#update"
 
     #ITEM ROUTES --------------------------------------->
+    get "/items/recipes" => "items#recipes_index"
 
     get "/items" => "items#index"
     post "/items" => "items#create"
