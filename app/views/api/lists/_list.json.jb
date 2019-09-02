@@ -2,4 +2,13 @@
   id: list.id,
   name: list.name,
   user_id: list.user_id,
+  item: list.list_items.map { |list_item|
+    {
+      # item: location_item.item,
+      name: list_item.item.name,
+      QTY: list_item.QTY,
+      UOM: list_item.item.UOM,
+      item_id: list_item.item.id,
+    }
+  },
 }

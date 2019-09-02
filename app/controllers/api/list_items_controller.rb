@@ -1,8 +1,8 @@
 class Api::ListItemsController < ApplicationController
-  before_action :authenticate_user
+  # before_action :authenticate_user
 
   def index
-    @list_items = current_user.list_items
+    @list_items = ListItem.all
     render "index.json.jb"
   end
 

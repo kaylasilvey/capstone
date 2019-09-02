@@ -6,4 +6,5 @@
   QTY: location_item.QTY,
   item: location_item.item.name,
   location: location_item.location.name,
+  UOM: location_item.item.UOM,
 }

@@ -8,6 +8,7 @@
       name: location_item.item.name,
       QTY: location_item.QTY,
       UOM: location_item.item.UOM,
+      location_item_id: location_item.id,
     }
   },
 }

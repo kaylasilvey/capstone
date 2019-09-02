@@ -27,7 +27,7 @@ class Api::ItemsController < ApplicationController
   def update
     @item = Item.find_by(id: params[:id])
     @item.name = params[:name] || @item.name
-    @item.UOM = params[:UOM] || @item.name
+    @item.UOM = params[:UOM] || @item.UOM
     @item.save
     render "show.json.jb"
   end

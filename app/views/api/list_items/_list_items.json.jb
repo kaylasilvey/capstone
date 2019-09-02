@@ -5,4 +5,5 @@
   user_id: list_item.user_id,
   QTY: list_item.QTY,
   item: list_item.item.name,
+  list: list_item.list.name,
 }
