@@ -13,8 +13,11 @@ class Api::ListItemsController < ApplicationController
 
   def create
     @list_item = ListItem.new(
-      name: params[:name],
+      item: params[:item],
+      QTY: params[:QTY],
+      UOM: params[:UOM],
       user_id: current_user.id,
+      list_id: params[:list_id],
     )
     if @list_item.save
       render "show.json.jb"
