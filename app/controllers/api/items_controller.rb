@@ -14,6 +14,14 @@ class Api::ItemsController < ApplicationController
     render json: { recipes: @recipes }
   end
 
+  # def recipes_show
+  #   response = HTTP
+  #     .headers(:accept => "application/json")
+  #     .get("https://www.food2fork.com/api/get?key=#{ENV["API_KEY"]}&&rId=#{params[:recipe_id]}")
+  #   @recipes = JSON.parse(response.body.to_s)
+  #   render json: { recipe: @recipe }
+  # end
+
   def show
     @item = Item.find_by(id: params[:id])
     render "show.json.jb"

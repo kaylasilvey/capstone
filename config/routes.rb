@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
     #ITEM ROUTES --------------------------------------->
     get "/items/recipes" => "items#recipes_index"
+    # get "/items/recipes/:id" => "items#recipes_show"
 
     get "/items" => "items#index"
     post "/items" => "items#create"
